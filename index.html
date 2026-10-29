@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c32">
+  <meta name="description" content="Undangan pernikahan Sigit Prastyo dan Dianiza Triyani Putri, Sabtu 28 November 2026.">
+  <title>The Wedding of Sigit &amp; Putri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-ornament" aria-hidden="true">✦ ❧ ✦</div>
+  <header class="hero" id="home">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="eyebrow">UNDANGAN PERNIKAHAN</p>
+      <h1>The Wedding Of<br><span>Sigit <i>&amp;</i> Putri</span></h1>
+      <p class="hero-date">Sabtu, 28 November 2026</p>
+      <p class="hero-intro">Dengan penuh rasa syukur, kami mengundang Anda untuk hadir dan memberikan doa restu.</p>
+      <a class="button button-gold" href="#undangan">Buka Undangan <span>↓</span></a>
+    </div>
+    <div class="hero-bottom">S &amp; P</div>
+  </header>
+
+  <main id="undangan">
+    <section class="intro section">
+      <p class="eyebrow">BISMILLAHIRRAHMANIRRAHIM</p>
+      <div class="ornament">❦</div>
+      <p class="intro-copy">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan resepsi pernikahan putra-putri kami:</p>
+      <div class="couple-grid">
+        <article class="person">
+          <div class="portrait-frame"><img src="assets/prewedding-1.jpg" alt="Foto prewedding Sigit dan Putri di depan gebyok Jawa" loading="lazy"></div>
+          <h2>Sigit Prastyo</h2>
+          <p>Putra dari</p>
+          <p class="parents">Bapak Panut<br>&amp; Ibu Surami</p>
+          <p class="address">Jl. Raya Ngumpul – Sumoroto, RT 03 / RW 02,<br>Dukuh Krajan, Desa Poko, Kec. Jambon,<br>Kab. Ponorogo</p>
+        </article>
+        <div class="ampersand">&amp;</div>
+        <article class="person">
+          <div class="portrait-frame"><img src="assets/prewedding-2.jpg" alt="Foto prewedding Sigit dan Putri di alam terbuka" loading="lazy"></div>
+          <h2>Dianiza Triyani Putri</h2>
+          <p>Putri dari</p>
+          <p class="parents">Alm. Bapak Karibun<br>&amp; Ibu Yatini</p>
+          <p class="address">RT 01 / RW 04, Dukuh Ngecrak,<br>Desa Bulukidul, Kec. Balong,<br>Kab. Ponorogo</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section section">
+      <p class="eyebrow">MENUJU HARI BAHAGIA</p>
+      <h2 class="section-title">Save The Date</h2>
+      <p class="date-line">Sabtu, 28 November 2026 · Pukul 13.00 WIB</p>
+      <div class="countdown" aria-label="Hitung mundur pernikahan">
+        <div><strong id="days">--</strong><span>Hari</span></div>
+        <div><strong id="hours">--</strong><span>Jam</span></div>
+        <div><strong id="minutes">--</strong><span>Menit</span></div>
+        <div><strong id="seconds">--</strong><span>Detik</span></div>
+      </div>
+    </section>
+
+    <section class="event section">
+      <p class="eyebrow">DENGAN SEGALA KERENDAHAN HATI</p>
+      <h2 class="section-title">Resepsi Pernikahan</h2>
+      <div class="event-card">
+        <div class="event-icon">❦</div>
+        <p class="event-date">SABTU, 28 NOVEMBER 2026</p>
+        <p class="event-time">13.00 WIB – Selesai</p>
+        <div class="thin-line"></div>
+        <h3>Kediaman Mempelai Pria</h3>
+        <p>Jl. Raya Ngumpul – Sumoroto, RT 03 / RW 02,<br>Dukuh Krajan, Desa Poko, Kec. Jambon,<br>Kabupaten Ponorogo, Jawa Timur</p>
+        <a class="button button-green" href="https://goo.gl/maps/bXkNTyZZZbzSv66u5" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a>
+      </div>
+    </section>
+
+    <section class="wishes section">
+      <p class="eyebrow">DOA DAN RESTU ANDA</p>
+      <h2 class="section-title">Kirim Ucapan</h2>
+      <p class="section-subtitle">Tinggalkan doa dan ucapan terbaik untuk kedua mempelai.</p>
+      <form id="wish-form" class="wish-form">
+        <label for="guest-name">Nama</label>
+        <input id="guest-name" name="name" type="text" placeholder="Masukkan nama Anda" maxlength="70" required>
+        <label for="guest-message">Ucapan dan doa</label>
+        <textarea id="guest-message" name="message" rows="4" placeholder="Tuliskan ucapan Anda di sini..." maxlength="500" required></textarea>
+        <button class="button button-green" type="submit">Kirim Ucapan</button>
+      </form>
+      <p class="storage-note">Ucapan tersimpan di browser/perangkat yang digunakan. Untuk mengumpulkan ucapan dari semua tamu secara online, hubungkan form ini ke layanan database.</p>
+      <div id="wish-list" class="wish-list" aria-live="polite"></div>
+    </section>
+
+    <section class="rsvp section">
+      <p class="eyebrow">KONFIRMASI KEHADIRAN</p>
+      <h2 class="section-title">RSVP</h2>
+      <p class="section-subtitle">Mohon konfirmasi kehadiran Anda melalui WhatsApp.</p>
+      <form id="rsvp-form" class="rsvp-form">
+        <label for="rsvp-name">Nama</label>
+        <input id="rsvp-name" type="text" placeholder="Nama Anda" required maxlength="70">
+        <label for="attendance">Konfirmasi kehadiran</label>
+        <select id="attendance" required>
+          <option value="">Pilih jawaban</option>
+          <option value="Insyaallah hadir">Insyaallah hadir</option>
+          <option value="Mohon maaf, belum bisa hadir">Mohon maaf, belum bisa hadir</option>
+        </select>
+        <label for="guest-count">Jumlah tamu</label>
+        <select id="guest-count">
+          <option>1 orang</option><option>2 orang</option><option>3 orang</option><option>4 orang</option><option>5 orang atau lebih</option>
+        </select>
+        <button class="button button-green" type="submit">Kirim RSVP via WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="gift section">
+      <p class="eyebrow">TANDA KASIH</p>
+      <h2 class="section-title">Amplop Digital</h2>
+      <p class="section-subtitle">Doa restu Anda merupakan hadiah terindah bagi kami. Bagi keluarga dan sahabat yang ingin mengirim tanda kasih, silakan pindai QR berikut.</p>
+      <div class="qr-card"><img src="assets/qr-amplop-digital.jpg" alt="QR code amplop digital" loading="lazy"></div>
+      <p class="qr-note">Silakan pindai QR menggunakan aplikasi yang sesuai dan pastikan nama penerima serta detail transaksi benar sebelum mengirim.</p>
+    </section>
+
+    <section class="closing section">
+      <div class="ornament">❦</div>
+      <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+      <p class="closing-thanks">Terima kasih atas doa dan restunya.</p>
+      <h2>Sigit <i>&amp;</i> Putri</h2>
+      <div class="family-grid">
+        <div><span>Keluarga Mempelai Pria</span><strong>Bapak Panut<br>&amp; Ibu Surami</strong></div>
+        <div><span>Keluarga Mempelai Wanita</span><strong>Alm. Bapak Karibun<br>&amp; Ibu Yatini</strong></div>
+      </div>
+    </section>
+  </main>
+  <footer>Dengan cinta dan doa · Sigit &amp; Putri · 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>

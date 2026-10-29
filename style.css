@@ -1,0 +1,88 @@
+ :root {
+  --green: #173c32; --green-dark: #102d26; --gold: #c8a96a; --cream: #f8f4eb;
+  --ink: #29352e; --muted: #6f776f; --white: #fffdf8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: "DM Sans", Arial, sans-serif; line-height: 1.7; }
+.top-ornament { text-align: center; padding: 10px; color: var(--gold); background: var(--green-dark); letter-spacing: 10px; }
+.hero { min-height: 90vh; display: grid; place-items: center; position: relative; overflow: hidden; color: white; text-align: center; padding: 70px 22px 90px; background: var(--green) url("assets/prewedding-1.jpg") center 38% / cover no-repeat; }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,28,23,.64), rgba(12,35,29,.76)); }
+.hero-content { position: relative; max-width: 700px; z-index: 1; }
+.eyebrow { font-size: .72rem; letter-spacing: .22em; font-weight: 700; color: var(--gold); margin: 0 0 12px; }
+h1, h2, .section-title, .person h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 500; }
+h1 { font-size: clamp(2.3rem, 7vw, 4.8rem); line-height: 1.12; margin: 0 0 20px; }
+h1 span { color: #f0d9a2; font-size: 1.15em; }
+h1 i, .closing h2 i { font-weight: 500; color: var(--gold); }
+.hero-date { font-size: 1.05rem; letter-spacing: .08em; }
+.hero-intro { max-width: 500px; margin: 18px auto 28px; color: #f4f0e7; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; border: 0; border-radius: 3px; padding: 13px 22px; font: 700 .88rem "DM Sans", sans-serif; text-decoration: none; cursor: pointer; transition: transform .2s, opacity .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-gold { background: var(--gold); color: #172b23; }
+.button-green { background: var(--green); color: white; }
+.hero-bottom { position: absolute; bottom: 20px; left: 0; right: 0; color: var(--gold); font: italic 2rem "Playfair Display", serif; letter-spacing: .16em; }
+.section { padding: 76px 22px; text-align: center; }
+.intro { max-width: 1120px; margin: auto; }
+.ornament { color: var(--gold); font-size: 2rem; margin: 8px 0; }
+.intro-copy, .section-subtitle { max-width: 650px; margin: 0 auto 32px; color: var(--muted); }
+.couple-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 28px; align-items: center; margin-top: 40px; }
+.person { min-width: 0; }
+.portrait-frame { border: 1px solid #d8c69d; padding: 8px; max-width: 390px; margin: 0 auto 20px; background: white; }
+.portrait-frame img { width: 100%; height: 440px; object-fit: cover; display: block; }
+.person h2 { color: var(--green); font-size: clamp(1.55rem, 3vw, 2.2rem); margin: 0 0 8px; line-height: 1.25; }
+.person p { margin: 3px 0; }
+.parents { font-family: "Playfair Display", serif; font-size: 1.12rem; }
+.address { color: var(--muted); font-size: .86rem; margin-top: 15px !important; }
+.ampersand { font: italic 3.4rem "Playfair Display", serif; color: var(--gold); }
+.countdown-section { background: var(--green); color: white; }
+.section-title { font-size: clamp(2rem, 5vw, 3rem); color: var(--green); margin: 0 0 12px; line-height: 1.25; }
+.countdown-section .section-title { color: white; }
+.date-line { color: #e5dfd0; }
+.countdown { display: flex; justify-content: center; gap: 14px; margin-top: 30px; }
+.countdown div { min-width: 90px; padding: 16px 12px; border: 1px solid rgba(220,193,132,.6); background: rgba(255,255,255,.04); }
+.countdown strong { display: block; color: #f0d9a2; font: 2rem "Playfair Display", serif; }
+.countdown span { display: block; font-size: .75rem; color: #eee8dc; }
+.event-card { max-width: 650px; margin: 30px auto 0; padding: 38px 24px; border: 1px solid #d8c69d; background: var(--white); box-shadow: 0 12px 35px rgba(27,48,39,.06); }
+.event-icon { color: var(--gold); font-size: 2rem; }
+.event-date { color: var(--green); font-weight: 700; letter-spacing: .1em; }
+.event-time { font: 1.4rem "Playfair Display", serif; }
+.thin-line { width: 70px; height: 1px; background: var(--gold); margin: 20px auto; }
+.event-card h3 { font: 1.4rem "Playfair Display", serif; color: var(--green); }
+.event-card > p:not(.event-date):not(.event-time) { color: var(--muted); }
+.event-card .button { margin-top: 18px; }
+.wishes, .gift { background: #eee8da; }
+.wish-form, .rsvp-form { max-width: 560px; margin: 28px auto 0; text-align: left; }
+label { display: block; margin: 14px 0 6px; font-size: .9rem; font-weight: 700; }
+input, textarea, select { width: 100%; border: 1px solid #d6d0c2; border-radius: 3px; background: #fffdf8; color: var(--ink); padding: 13px 14px; font: 1rem "DM Sans", sans-serif; }
+textarea { resize: vertical; }
+.wish-form button, .rsvp-form button { margin-top: 18px; width: 100%; }
+.storage-note, .qr-note { max-width: 560px; margin: 14px auto; font-size: .78rem; color: var(--muted); }
+.wish-list { max-width: 560px; margin: 25px auto 0; text-align: left; }
+.wish-item { background: var(--white); border-left: 3px solid var(--gold); padding: 14px 16px; margin: 10px 0; overflow-wrap: anywhere; }
+.wish-item strong { color: var(--green); }
+.wish-item p { margin: 5px 0 0; }
+.rsvp { background: var(--white); }
+.rsvp-form { max-width: 500px; }
+.qr-card { max-width: 300px; margin: 25px auto 12px; background: white; border: 1px solid #d8c69d; padding: 12px; }
+.qr-card img { width: 100%; display: block; height: auto; }
+.closing { background: var(--green-dark); color: #f5f0e4; }
+.closing > p { max-width: 700px; margin: 10px auto; }
+.closing-thanks { color: #d8c69d; }
+.closing h2 { font-size: clamp(2.5rem, 6vw, 4rem); color: white; margin: 24px 0; }
+.family-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 700px; margin: 35px auto 0; }
+.family-grid span, .family-grid strong { display: block; }
+.family-grid span { color: #d8c69d; font-size: .8rem; margin-bottom: 8px; }
+.family-grid strong { font: 1.1rem/1.6 "Playfair Display", serif; }
+footer { text-align: center; padding: 18px; background: #0b211b; color: #b8b5a9; font-size: .78rem; }
+@media (max-width: 700px) {
+  .hero { min-height: 85vh; }
+  .section { padding: 58px 18px; }
+  .couple-grid { grid-template-columns: 1fr; gap: 24px; }
+  .ampersand { font-size: 2.6rem; line-height: 1; }
+  .portrait-frame { max-width: 330px; }
+  .portrait-frame img { height: 390px; }
+  .countdown { gap: 7px; }
+  .countdown div { min-width: 0; flex: 1; padding: 12px 5px; }
+  .countdown strong { font-size: 1.55rem; }
+  .family-grid { grid-template-columns: 1fr; gap: 22px; }
+}
